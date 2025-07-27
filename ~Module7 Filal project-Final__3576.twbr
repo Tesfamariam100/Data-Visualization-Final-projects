@@ -1,0 +1,1717 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_mobile_sales_data 2' inline='true' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_mobile_sales_data' name='excel-direct.11anvlb167uu9h1e6tgd30laooi2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/M7/cleaned_mobile_sales_data 2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11anvlb167uu9h1e6tgd30laooi2' name='mobile_sales_data' table='[mobile_sales_data$]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Product' ordinal='0' />
+            <column datatype='string' name='Brand' ordinal='1' />
+            <column datatype='integer' name='Price' ordinal='2' />
+            <column datatype='date' name='Inward Date' ordinal='3' />
+            <column datatype='integer' name='InWard Year' ordinal='4' />
+            <column datatype='string' name='InWard Month' ordinal='5' />
+            <column datatype='date' name='Dispatch Date' ordinal='6' />
+            <column datatype='integer' name='Dispatch Year' ordinal='7' />
+            <column datatype='string' name='Dispatch Month' ordinal='8' />
+            <column datatype='integer' name='Quantity Sold' ordinal='9' />
+            <column datatype='string' name='Customer Location' ordinal='10' />
+            <column datatype='string' name='Region' ordinal='11' />
+            <column datatype='string' name='Regions-Ed' ordinal='12' />
+            <column datatype='string' name='Processor Specification' ordinal='13' />
+            <column datatype='string' name='RAM' ordinal='14' />
+            <column datatype='string' name='ROM' ordinal='15' />
+            <column datatype='integer' name='ROM-GB' ordinal='16' />
+            <column datatype='string' name='ROM-Type' ordinal='17' />
+            <column datatype='string' name='SSD' ordinal='18' />
+            <column datatype='integer' name='Total Revenue' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inward Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Inward Date]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Inward Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InWard Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InWard Year]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>InWard Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InWard Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[InWard Month]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>InWard Month</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dispatch Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Dispatch Date]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Dispatch Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dispatch Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dispatch Year]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Dispatch Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dispatch Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dispatch Month]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Dispatch Month</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity Sold]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Quantity Sold</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Location]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Customer Location</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regions-Ed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regions-Ed]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Regions-Ed</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processor Specification</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Processor Specification]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Processor Specification</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RAM]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>RAM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ROM]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>ROM</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROM-GB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ROM-GB]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>ROM-GB</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROM-Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ROM-Type]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>ROM-Type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SSD</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SSD]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>SSD</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Revenue]</local-name>
+            <parent-name>[mobile_sales_data]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Dispatch Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[InWard Year]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Processor Specification]' role='dimension' type='nominal' />
+      <column datatype='string' name='[RAM]' role='dimension' type='nominal' />
+      <column caption='Rom-Gb' datatype='integer' name='[ROM-GB]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Northern Territories&quot;' value='&quot;Northwest Territories&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='string' name='[Regions-Ed]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Northern Territories&quot;' value='&quot;Northwest Territories&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='string' name='[SSD]' role='dimension' type='nominal' />
+      <column caption='mobile_sales_data' datatype='table' name='[__tableau_internal_object_id__].[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]' role='measure' type='quantitative' />
+      <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Processor Specification]' derivation='None' name='[none:Processor Specification:nk]' pivot='key' type='nominal' />
+      <column-instance column='[RAM]' derivation='None' name='[none:RAM:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SSD]' derivation='None' name='[none:SSD:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_12cpj4z14ujdaf16fh6zf0cffr95.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/21/2025 08:28:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42521</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inward Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Inward Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inward Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2278</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InWard Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InWard Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InWard Year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InWard Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InWard Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InWard Month</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dispatch Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Dispatch Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dispatch Date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2261</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dispatch Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dispatch Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dispatch Year</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dispatch Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dispatch Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dispatch Month</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity Sold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity Sold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity Sold</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Location</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Regions-Ed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Regions-Ed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Regions-Ed</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Processor Specification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Processor Specification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Processor Specification</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RAM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RAM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RAM</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ROM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROM</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROM-GB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ROM-GB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROM-GB</remote-alias>
+              <ordinal>16</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROM-Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ROM-Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROM-Type</remote-alias>
+              <ordinal>17</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SSD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SSD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SSD</remote-alias>
+              <ordinal>18</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Revenue</remote-alias>
+              <ordinal>19</ordinal>
+              <family>mobile_sales_data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47507</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;&#10;Newfoundland and Labrador&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Yukon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prince Edward Island&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Northern Territories&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nova Scotia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Quebec&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nunavut&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Saskatchewan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:RAM:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;4GB&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;16GB&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;12GB&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;32GB&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;8GB&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;6GB&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Processor Specification:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;i3&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ryzen 3&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;i9&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Snapdragon 7 Gen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MediaTek Dimensity&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Apple A-Series&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ryzen 7&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MediaTek Helio&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Snapdragon 7s&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Snapdragon 8 Gen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;i7&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Ryzen 5&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;i5&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Samsung Exynos&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Ryzen 9&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Brand:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;Microsoft&quot;</bucket>
+            </map>
+            <map to='#c53241'>
+              <bucket>&quot;Lenovo&quot;</bucket>
+            </map>
+            <map to='#d14544'>
+              <bucket>&quot;iQOO&quot;</bucket>
+            </map>
+            <map to='#de5747'>
+              <bucket>&quot;Huawei&quot;</bucket>
+            </map>
+            <map to='#e96949'>
+              <bucket>&quot;HP&quot;</bucket>
+            </map>
+            <map to='#f27b4a'>
+              <bucket>&quot;Google&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Acer&quot;</bucket>
+            </map>
+            <map to='#f6bb58'>
+              <bucket>&quot;Apple&quot;</bucket>
+            </map>
+            <map to='#f9a550'>
+              <bucket>&quot;Asus&quot;</bucket>
+            </map>
+            <map to='#fa8f4d'>
+              <bucket>&quot;Dell&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:SSD:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1TB&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;512GB&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;256GB&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2TB&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='mobile_sales_data' id='mobile!sales!data_B24564C89F2F4232AB051AD9E51EBC31'>
+            <properties context=''>
+              <relation connection='excel-direct.11anvlb167uu9h1e6tgd30laooi2' name='mobile_sales_data' table='[mobile_sales_data$]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Product' ordinal='0' />
+                  <column datatype='string' name='Brand' ordinal='1' />
+                  <column datatype='integer' name='Price' ordinal='2' />
+                  <column datatype='date' name='Inward Date' ordinal='3' />
+                  <column datatype='integer' name='InWard Year' ordinal='4' />
+                  <column datatype='string' name='InWard Month' ordinal='5' />
+                  <column datatype='date' name='Dispatch Date' ordinal='6' />
+                  <column datatype='integer' name='Dispatch Year' ordinal='7' />
+                  <column datatype='string' name='Dispatch Month' ordinal='8' />
+                  <column datatype='integer' name='Quantity Sold' ordinal='9' />
+                  <column datatype='string' name='Customer Location' ordinal='10' />
+                  <column datatype='string' name='Region' ordinal='11' />
+                  <column datatype='string' name='Regions-Ed' ordinal='12' />
+                  <column datatype='string' name='Processor Specification' ordinal='13' />
+                  <column datatype='string' name='RAM' ordinal='14' />
+                  <column datatype='string' name='ROM' ordinal='15' />
+                  <column datatype='integer' name='ROM-GB' ordinal='16' />
+                  <column datatype='string' name='ROM-Type' ordinal='17' />
+                  <column datatype='string' name='SSD' ordinal='18' />
+                  <column datatype='integer' name='Total Revenue' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Popularity by ROM'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ROM]' role='dimension' type='nominal' />
+            <column-instance column='[ROM]' derivation='None' name='[none:ROM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:ROM:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:ROM:nk]' />
+              <text column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:ROM:nk]</cols>
+      </table>
+      <simple-id uuid='{AEB76400-0DBA-4BBA-82F3-5578E99CC901}' />
+    </worksheet>
+    <worksheet name='Popularity by SSD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quantity sold vs SSD</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column datatype='string' name='[SSD]' role='dimension' type='nominal' />
+            <column-instance column='[SSD]' derivation='None' name='[none:SSD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:SSD:nk]' />
+              <groupfilter function='member' level='[none:SSD:nk]' member='&quot;N/A&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]' />
+              <text column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]</cols>
+      </table>
+      <simple-id uuid='{A0B2C8BE-D75D-49D6-A37A-7C153C36B738}' />
+    </worksheet>
+    <worksheet name='Popularity processer spc'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f'>product sold by Processor spec. </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='string' name='[Processor Specification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Processor Specification]' derivation='None' name='[none:Processor Specification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Processor Specification:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Processor Specification:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Processor Specification:nk]</cols>
+      </table>
+      <simple-id uuid='{34DAFA00-18CF-4E12-8F2E-15AFDA42D449}' />
+    </worksheet>
+    <worksheet name='Quantity -Sales-Line chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='string' name='[Dispatch Month]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Dispatch Month]' derivation='None' name='[none:Dispatch Month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' field-type='quantitative' max='25369' min='21000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' />
+              <text column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Dispatch Month:nk]</cols>
+      </table>
+      <simple-id uuid='{39636EEF-6EA7-4600-B624-AE400AAB4CB6}' />
+    </worksheet>
+    <worksheet name='RAM vs Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' fontsize='12'>Sold products by RAM and  Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column datatype='string' name='[RAM]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Regions-Ed]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Northern Territories&quot;' value='&quot;Northwest Territories&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[RAM]' derivation='None' name='[none:RAM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Regions-Ed]' derivation='None' name='[none:Regions-Ed:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Regions-Ed:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]</rows>
+        <cols>([federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:RAM:nk] / [federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Regions-Ed:nk])</cols>
+      </table>
+      <simple-id uuid='{ED7F4FA6-E9A4-4E21-A6DE-14AD7B4F29DB}' />
+    </worksheet>
+    <worksheet name='Top 10 Brands by Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' fontsize='12'>Top Ten Brands by Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Revenue]' derivation='Sum' name='[sum:Total Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Brand:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Acer&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Apple&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Asus&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Dell&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Google&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;HP&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Huawei&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;iQOO&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Lenovo&quot;' />
+              <groupfilter function='member' level='[none:Brand:nk]' member='&quot;Microsoft&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' palette='red_green_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Brand:nk]</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]</cols>
+      </table>
+      <simple-id uuid='{3128FEAE-4CC7-4E2C-AA4C-D3B8E3B1C7EB}' />
+    </worksheet>
+    <worksheet name='Total Revenue and Quantity sold by region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' fontname='Times New Roman' fontsize='12'>Total Revenue  and Quantities Sold by Provinces and Teritories</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_mobile_sales_data 2' name='federated.0kt2mbl1v3hk1q15aszry1m3jfbj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0kt2mbl1v3hk1q15aszry1m3jfbj'>
+            <column datatype='integer' name='[Quantity Sold]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Northern Territories&quot;' value='&quot;Northwest Territories&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Quantity Sold]' derivation='Sum' name='[sum:Quantity Sold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Revenue]' derivation='Sum' name='[sum:Total Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Longitude (generated)]' field-type='quantitative' max='-3474009.2693792656' min='-17334950.540873121' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)]' field-type='quantitative' max='13252546.479243843' min='4356718.4867003737' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='1' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)]' field-type='quantitative' fold='true' max='13252546.479243843' min='4356718.4867003737' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' />
+              <text column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Region:nk]' />
+              <lod column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Region:nk]' />
+              <geometry column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' />
+              <lod column='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)] + [federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Latitude (generated)])</rows>
+        <cols>[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{6A4EE74E-3648-42C7-9079-409EA0DB94B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97256' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1372'>
+            <zone h='97256' id='5' type-v2='layout-basic' w='65384' x='1231' y='1372'>
+              <zone h='40995' id='3' name='Top 10 Brands by Revenue' w='65384' x='1231' y='1372'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24314' id='9' name='Total Revenue and Quantity sold by region' w='65384' x='1231' y='74314'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31947' id='11' name='RAM vs Region' w='65384' x='1231' y='42367'>
+                <layout-cache cell-count-w='48' minheight='236' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='209' h='97256' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='32154' x='66615' y='1372'>
+              <zone h='13893' id='8' name='Top 10 Brands by Revenue' pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type-v2='color' w='32154' x='66615' y='1372'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13893' id='10' name='Total Revenue and Quantity sold by region' pane-specification-id='1' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type-v2='color' w='32154' x='66615' y='15265'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40137' id='12' name='RAM vs Region' pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Regions-Ed:nk]' type-v2='color' w='32154' x='66615' y='29158'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97256' id='13' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1372'>
+                <zone fixed-size='280' h='40995' id='3' is-fixed='true' name='Top 10 Brands by Revenue' w='65384' x='1231' y='1372'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13893' id='8' name='Top 10 Brands by Revenue' pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type-v2='color' w='32154' x='66615' y='1372'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='31947' id='11' is-fixed='true' name='RAM vs Region' w='65384' x='1231' y='42367'>
+                  <layout-cache cell-count-w='48' minheight='236' non-cell-size-w='80' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='40137' id='12' name='RAM vs Region' pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Regions-Ed:nk]' type-v2='color' w='32154' x='66615' y='29158'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='201' h='24314' id='9' is-fixed='true' name='Total Revenue and Quantity sold by region' w='65384' x='1231' y='74314'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13893' id='10' name='Total Revenue and Quantity sold by region' pane-specification-id='1' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type-v2='color' w='32154' x='66615' y='15265'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{251203DB-B225-435E-8694-B3E83EB71C95}' />
+    </dashboard>
+    <dashboard name='Revenue Story' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Revenue of top 10 Brands ' captured-sheet='Top 10 Brands by Revenue' id='1' />
+                  <story-point caption='Total Revenue by Month' captured-sheet='Quantity -Sales-Line chart' id='2' />
+                  <story-point captured-sheet='Dashboard 1' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{FE83525F-8C31-4030-91BB-34EB4EC608FC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='Top 10 Brands by Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44CE9F1A-A430-4396-A340-8FA17010C9E6}' />
+    </window>
+    <window class='worksheet' name='Quantity -Sales-Line chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Quantity Sold:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F686165F-A3AF-4462-85FC-0E18C4B8BF00}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Total Revenue and Quantity sold by region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[sum:Total Revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{3561909C-82B6-4F1A-8916-7F1875A47984}' />
+    </window>
+    <window class='worksheet' name='RAM vs Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Regions-Ed:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D587791-E452-47D2-B75C-2925E7ACD2F5}' />
+    </window>
+    <window class='worksheet' name='Popularity by ROM'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:ROM:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8EFD096D-E17D-49B0-B17F-11E728D4ABF4}' />
+    </window>
+    <window class='worksheet' name='Popularity by SSD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:SSD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD9B52E9-46E8-40CC-A869-4749E285180C}' />
+    </window>
+    <window class='worksheet' name='Popularity processer spc'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kt2mbl1v3hk1q15aszry1m3jfbj].[none:Processor Specification:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74677F5B-D91F-4195-87F0-C3B1C967A07D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='RAM vs Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Brands by Revenue' />
+        <viewpoint name='Total Revenue and Quantity sold by region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{5FCD8F40-90C2-445F-B9C9-952AF2A3FBB1}' />
+    </window>
+    <window class='dashboard' name='Revenue Story'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{61A0CE8E-57E8-4D16-8160-6C07B97D089D}' />
+    </window>
+  </windows>
+</workbook>
